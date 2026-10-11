@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container {
+    position: relative;
+
+  }
+  .black-box {
+    position: relative;
+    z-index:1;
+    border: 2px solid black;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(132, 21, 21);
+  }
+  .red-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 60%;
+    height: 75px;
+    background-color: rgb(206, 172, 172);
+    z-index: 3; /* middle */
+  }
+  .blue-box {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 2; /* highest */
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="black-box">black-box</div>
+    <div class="red-box">red-box</div>
+    <div class="blue-box">blue-box</div>
+  </div>
+</body>
+</html>
